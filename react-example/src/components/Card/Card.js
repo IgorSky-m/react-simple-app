@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function Card({sculpture}) {
 
     return (
@@ -7,7 +8,7 @@ export default function Card({sculpture}) {
             <img src={sculpture.url} alt={sculpture.alt}/>
             <p>{`name: ${sculpture.name}`}</p>
             <p>{`artist: ${sculpture.artist}`}</p>
-            <p>{`description: ${sculpture.dedescriptions}`}</p>
+            <p>{`description: ${sculpture.description}`}</p>
         </div>
     )
 }
