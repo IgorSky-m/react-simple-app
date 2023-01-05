@@ -14,6 +14,7 @@ export default function ContentViewer(){
             <button onClick={() => setIndex(prev => Math.min(prev + 1, sculptureList.length -1))}>Next</button>
             <button onClick={() => setIndex(prev => Math.max(prev - 1, 0))}>Previous</button>
             <button onClick={() => setIndex(0)}>Reset</button>
+            <p>{`${index + 1} of ${sculptureList.length}`}</p>
             <Card sculpture={sculptureList[index]}/>
         </div> 
     )
